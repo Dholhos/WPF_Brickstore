@@ -1,0 +1,26 @@
+﻿<Window x:Class="Legocska.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Legocska"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#033F63">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <TextBox Background="#28666e" x:Name="txtBeirtSzoveg" Width="160" Height="25"/>
+
+        <DataGrid Background="#033F63" Grid.Row="1" x:Name="dtgAdatok">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="1" Width="160"/>
+                <DataGridTextColumn Header="2" Width="160"/>
+                <DataGridTextColumn Header="3" Width="160"/>
+                <DataGridTextColumn Header="4" Width="160"/>
+                <DataGridTextColumn Header="5" Width="160"/>
+                </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
