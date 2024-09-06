@@ -6,21 +6,73 @@
         xmlns:local="clr-namespace:Legocska"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#033F63">
+    <Grid Background="#D67AB1">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="9*"/>
         </Grid.RowDefinitions>
-        <TextBox Background="#28666e" x:Name="txtBeirtSzoveg" Width="160" Height="25"/>
+        <Grid Background="#60435F">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <DataGrid Background="#033F63" Grid.Row="1" x:Name="dtgAdatok">
-            <DataGrid.Columns >
-                <DataGridTextColumn Header="1" Width="160"/>
-                <DataGridTextColumn Header="2" Width="160"/>
-                <DataGridTextColumn Header="3" Width="160"/>
-                <DataGridTextColumn Header="4" Width="160"/>
-                <DataGridTextColumn Header="5" Width="160"/>
-                </DataGrid.Columns>
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Background="#60435F">
+                <Label Content="Keresés" VerticalAlignment="Center" Foreground="#D67AB1" Margin="0,0,10,0" />
+                <TextBox Background="#60435F" Foreground="#E2A3C7" x:Name="txtBeirtSzoveg" Width="160" Height="25" BorderBrush="#D67AB1"/>
+            </StackPanel>
+
+            <Button Background="#60435F" Foreground="#E2A3C7" BorderBrush="#D67AB1" Content="Fálj beolvasás" Width="160" Height="25" Margin="120,9,120,0" VerticalAlignment="Top" />
+        </Grid>
+
+        <DataGrid Background="#60435F" Grid.Row="1" x:Name="dtgAdatok">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ItemID" Width="*">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="#28666e" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="ItemName" Width="*">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="#28666e" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="CategoryName" Width="*">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="#28666e" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="ColorName" Width="*">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="#28666e" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Header="Qty" Width="*">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="#28666e" />
+                            <Setter Property="Foreground" Value="White" />
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
         </DataGrid>
     </Grid>
 </Window>
+

@@ -21,5 +21,7 @@ namespace Legocska
         {
             InitializeComponent();
         }
+
+
     }
 }

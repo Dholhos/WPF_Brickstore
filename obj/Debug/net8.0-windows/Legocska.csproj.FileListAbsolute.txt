@@ -18,3 +18,4 @@ C:\Users\holhos.dominik.mark\source\repos\Legocska\Legocska\obj\Debug\net8.0-win
 C:\Users\holhos.dominik.mark\source\repos\Legocska\Legocska\obj\Debug\net8.0-windows\Legocska.pdb
 C:\Users\holhos.dominik.mark\source\repos\Legocska\Legocska\obj\Debug\net8.0-windows\Legocska.genruntimeconfig.cache
 C:\Users\holhos.dominik.mark\source\repos\Legocska\Legocska\obj\Debug\net8.0-windows\ref\Legocska.dll
+C:\Users\holhos.dominik.mark\source\repos\Legocska\Legocska\obj\Debug\net8.0-windows\Legocska.sourcelink.json
